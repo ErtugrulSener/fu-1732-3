@@ -1,0 +1,98 @@
+{
+  "settings": {
+    "CUSTOM_REGEXPS": {
+      "Einfach": "^#+\\s*(.+)\\n*((?:\\n(?:^[^\\n#]{0,2}$|^[^\\n#].{3}(?<!<!--).*))+)",
+      "Einfach (Antwort eintippen)": "",
+      "Einfach (beide Richtungen)": "",
+      "Einfach (eine oder zwei Richtungen)": "",
+      "Lückentext": "",
+      "Obsidian-basic": "",
+      "Obsidian-basic-reversed": "",
+      "Obsidian-cloze": "",
+      "Obsidian-spaced": ""
+    },
+    "FILE_LINK_FIELDS": {
+      "Einfach": "Vorderseite",
+      "Einfach (Antwort eintippen)": "Vorderseite",
+      "Einfach (beide Richtungen)": "Vorderseite",
+      "Einfach (eine oder zwei Richtungen)": "Vorderseite",
+      "Lückentext": "Text",
+      "Obsidian-basic": "Front",
+      "Obsidian-basic-reversed": "Front",
+      "Obsidian-cloze": "Text",
+      "Obsidian-spaced": "Prompt"
+    },
+    "CONTEXT_FIELDS": {},
+    "FOLDER_DECKS": {
+      "Bilder": "",
+      "fu-1732": "",
+      "fu-1733": ""
+    },
+    "FOLDER_TAGS": {
+      "Bilder": "",
+      "fu-1732": "",
+      "fu-1733": ""
+    },
+    "Syntax": {
+      "Begin Note": "START",
+      "End Note": "END",
+      "Begin Inline Note": "STARTI",
+      "End Inline Note": "ENDI",
+      "Target Deck Line": "TARGET DECK",
+      "File Tags Line": "FILE TAGS",
+      "Delete Note Line": "DELETE",
+      "Frozen Fields Line": "FROZEN"
+    },
+    "Defaults": {
+      "Tag": "Obsidian_to_Anki",
+      "Deck": "Default",
+      "Scheduling Interval": 0,
+      "Add File Link": false,
+      "Add Context": false,
+      "CurlyCloze": false,
+      "CurlyCloze - Highlights to Clozes": false,
+      "ID Comments": true,
+      "Add Obsidian Tags": false
+    }
+  },
+  "Added Media": [],
+  "File Hashes": {},
+  "fields_dict": {
+    "Einfach": [
+      "Vorderseite",
+      "Rückseite"
+    ],
+    "Einfach (Antwort eintippen)": [
+      "Vorderseite",
+      "Rückseite"
+    ],
+    "Einfach (beide Richtungen)": [
+      "Vorderseite",
+      "Rückseite"
+    ],
+    "Einfach (eine oder zwei Richtungen)": [
+      "Vorderseite",
+      "Rückseite",
+      "Gegenrichtung hinzufügen"
+    ],
+    "Lückentext": [
+      "Text",
+      "Rückseite Extra"
+    ],
+    "Obsidian-basic": [
+      "Front",
+      "Back"
+    ],
+    "Obsidian-basic-reversed": [
+      "Front",
+      "Back"
+    ],
+    "Obsidian-cloze": [
+      "Text",
+      "Extra"
+    ],
+    "Obsidian-spaced": [
+      "Prompt"
+    ]
+  }
+}
