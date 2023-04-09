@@ -1,6 +1,7 @@
 ## 1. Describe the difference between safety and security.
 
-*Safety*: Das ein System ohne Unterbrechungen (durch seine Umgebung oder Dritte) läuft.
+*Safety*: Das ein System ohne Unterbrechungen (durch seine Umgebung oder Dritte) läuft
+
 *Sicherheit*: Die Fähigkeit eines Systems gegen intentionelle Angriffe (bis zu einem gewissen Grad) zu bestehen.
 
 ## 2. Describe three situations where social engineering might lead to computer security issues.
