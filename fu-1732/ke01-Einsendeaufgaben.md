@@ -29,6 +29,7 @@ Beispiel: Falsch konfigurierte Systeme (Laut OWSAP einer der häufigsten Ursache
 	- DDoS Attacken
 	- Erpressung
 <br>
+
 - Embedded Systems
 	- Ausfall der Geschäftsfähigkeit eines Unternehmens
 	- Überschwemmungen (Fast schon alle Arten von *"Katastrophen"*)
