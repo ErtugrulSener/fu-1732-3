@@ -1,8 +1,7 @@
 ## 1. Describe the difference between safety and security.
+*Safety*: Das ein System ohne Unterbrechungen (durch seine Umgebung oder Dritte) läuft.
 
-*Safety*: Das ein System ohne Unterbrechungen (durch seine Umgebung oder Dritte) läuft
-
-*Sicherheit*: Die Fähigkeit eines Systems gegen intentionelle Angriffe (bis zu einem gewissen Grad) zu bestehen.
+*Security*: Die Fähigkeit eines Systems gegen intentionelle Angriffe (bis zu einem gewissen Grad) zu bestehen.
 
 ## 2. Describe three situations where social engineering might lead to computer security issues.
 - Sich als CEO ausgeben, um Spionage zu betreiben und z.B: interne Finanzdaten der Konkurrenz abzugreifen (Abfangen von Daten, *Confidentiality* verletzt)
@@ -23,9 +22,9 @@ Die IT Security kann aus diesen Informationen Gegenmaßnahmen ableiten, um zukü
 
 Beispiel: Falsch konfigurierte Systeme (Laut OWSAP einer der häufigsten Ursachen für IT Security incidents 2022)
 
-## 5. What side effects could IT security issues in IoT and embedded systems have?
+## 5. What (side) effects could IT security issues in IoT and embedded systems have?
 - IoT Geräte:
-	- Data Leackage
+	- Data Leakage
 	- Spionage
 	- DDoS Attacken
 	- Erpressung
