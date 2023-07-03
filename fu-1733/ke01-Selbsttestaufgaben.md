@@ -39,4 +39,6 @@
 
 ### Why would you think I used them?
 
-### 
+## 6.4 Recover deleted data
+
+### Unformat the disk
