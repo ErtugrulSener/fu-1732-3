@@ -55,3 +55,36 @@ http://192.168.178.93/html/4.php?name=%C0%BCscript%C0%BEalert("hi")%C0%BC/script
 ```ad-note
 Achtung: Dies klappt mit neuen Browsern nicht!
 ```
+
+## 6.1.2.1 - 1.php
+### Versuche die .config.php Datei zu laden
+**Warning**: include(.config): failed to open stream: No such file or directory in **/var/www/html/php/1.php** on line **23**  
+  
+**Warning**: include(): Failed opening '.config' for inclusion (include_path='.:/usr/share/php') in **/var/www/html/php/1.php** on line **23**
+
+### Lade eine random php Seite
+https://learningapps.org/index.php
+
+### Lade die phpinfo.php Datei
+`../phpinfo.php`
+
+### Welche siehst du, die lokale oder den remote?
+Remote, php läuft auf dem Server
+
+### Wie könnte man hier Code injezieren? (Tipp: Mime Types)
+
+### Was müsste man auf dem Webserver machen, um PHP Code zu injezieren?
+
+## 6.1.2.2 - 2.php
+### Wie könnte man hier Code injezieren?
+`<option value="../phpinfo">../phpinfo</option>`
+- Umgehen des "Schutzes", in dem Man einfach ein ".php" am Ende weglässt (Anders als bei 1.php wo man `../phpinfo.php` schreiben müsste)
+
+## 6.1.2.3 - 3.php
+### Einfach nur "phpinfo()" einzugeben würde nicht funktionieren, warum?
+- Bei mir hat folgendes funktioniert:
+- `http://192.168.178.93/php/3.php?maths=phpinfo%28%29`
+
+### 6.1.2.4 - 4.php
+### Wie könnte man die Anwendung angreifen?
+`http://192.168.178.93/php/4.php?op_1=phpinfo&op=(&op_2=)`
