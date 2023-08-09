@@ -1,5 +1,5 @@
 ## 1. Describe the difference between safety and security.
-*Safety*: Das ein System ohne Unterbrechungen (durch seine Umgebung oder Dritte) läuft.
+*Safety*: Safety hat das Ziel Computersystem und -netze vor natürlichen Risiken ihrer Umgebung und den Folgen eines Risikos zu schützen.
 
 *Security*: Die Fähigkeit eines Systems gegen intentionelle Angriffe (bis zu einem gewissen Grad) zu bestehen.
 
@@ -20,7 +20,7 @@ Bei der IT Forensik werden Ermittlungen vorgenommen und die (potenziell bereits 
 
 Die IT Security kann aus diesen Informationen Gegenmaßnahmen ableiten, um zukünftige Angriffe zu verhindern. Natürlich ist der eigentliche Angriff bereits geschehen, man kann aber einen erneuten Angriff (mit der selben Methodik) verhindern, indem man zum Beispiel die gefundenen Sicherheitslücken (durch die IT Forensik) schließt.
 
-Beispiel: Falsch konfigurierte Systeme (Laut OWSAP einer der häufigsten Ursachen für IT Security incidents 2022)
+Beispiel: Falsch konfigurierte Systeme (Laut OWSAP einer der häufigsten Ursachen für IT Security Incidents 2022)
 
 ## 5. What (side) effects could IT security issues in IoT and embedded systems have?
 - IoT Geräte:
