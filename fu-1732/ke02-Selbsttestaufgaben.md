@@ -19,7 +19,7 @@ Einfach `<i>Ertugrul</i>` in die Box eingeben!
 
 ### Füge ein weiteres Feld ein
 ```html
-Ertugrul<br><input />
+<input />
 ```
 
 
@@ -40,13 +40,13 @@ myname"/><script>alert('hey')</script><span class="
 <iframe src="2.php" height="200" width="300" title="Iframe Example"></iframe>
 ```
 
-## 6.1.1.4 - 4.php
+## 6.1.1.4 - 3.php
 ### Versuche eine Injection
 ```html
 <xmp></xmp><script>alert("Hello world");</script><xmp>
 ```
 
-## 6.1.1.5 - 5.php
+## 6.1.1.5 - 4.php
 ### Versuche einen Overlong UTF-8 Character (2 Bytes statt 1) zu injezieren
 ```html
 http://192.168.178.93/html/4.php?name=%C0%BCscript%C0%BEalert("hi")%C0%BC/script%C0%BE
@@ -54,6 +54,20 @@ http://192.168.178.93/html/4.php?name=%C0%BCscript%C0%BEalert("hi")%C0%BC/script
 
 ```ad-note
 Achtung: Dies klappt mit neuen Browsern nicht!
+```
+
+## 6.1.1.6 - 5.php
+### Double Encode ist false für htmlspecialentities und htmlspecialchars
+- Eingabe: <
+
+- wenn double-encode aus ist:
+```html
+&amp;lt;
+```
+
+- wenn double-encode an ist:
+```html
+&lt;
 ```
 
 ## 6.1.2.1 - 1.php
