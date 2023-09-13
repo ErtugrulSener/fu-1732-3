@@ -24,7 +24,7 @@ VQ==*
 ### "action" Feld der "form" modifizieren, um zu einer anderen URL weiterzuleiten
 - über die Konsole folgendes machen
 ```Javascript
-document.getElementsByTagName("form")[0].action = "2.php";
+<script>document.getElementsByTagName("form")[0].action = "2.php";</script>
 ```
 
 ## 6.7.1 - 1.php
